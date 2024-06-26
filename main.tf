@@ -7,10 +7,6 @@ provider "google" {
 #  name = "coge"
 #}
 
-resource "google_compute_network" "masakichi_network" {
-  name = "masakichi"
-}
-
 terraform {
   backend "gcs" {
     bucket  = "konotalos-terraform-state"
