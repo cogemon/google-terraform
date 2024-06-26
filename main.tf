@@ -11,10 +11,6 @@ resource "google_compute_network" "masakichi_network" {
   name = "masakichi"
 }
 
-resource "google_compute_network" "masakichi_network2" {
-  name = "masakichi2"
-}
-
 terraform {
   backend "gcs" {
     bucket  = "konotalos-terraform-state"
